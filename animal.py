@@ -4,7 +4,12 @@ class Animal(object):
       self.health=health
 
     def walk(self):
-        self.health -= 5
+        self.health -= 1
+        return self
+
+    def run(self):
+        self.health -=5
+        return self
 
     def displayHealth(self):
-        
+        print self.health
